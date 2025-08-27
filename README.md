@@ -1,38 +1,5 @@
 # Bookshelf App Starter Project
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+This project is a simple web-based application called Bookshelf App, designed to help users manage their personal reading list in a structured and interactive way. The application allows users to add new books by entering the title, author, year of publication, and selecting whether the book has been completed or not. Once added, the books are automatically displayed in one of two separate sections: “Not Completed Yet” and “Completed”, depending on their status. To make it easier for users to navigate through their collection, the application also provides a search feature that filters books based on their titles.
 
-## Ketentuan Pengerjaan Tugas
-
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
-
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
-
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
-
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
-
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
-
-Selamat mengerjakan dan sukses selalu!
+In addition to these basic functions, the application offers interactive modals that enhance user experience. The Edit Book modal allows users to update the details of an existing book. The Confirmation modal for completion appears when a user wants to mark a book as finished, ensuring that the change is intentional. Likewise, the Delete Confirmation modal ensures that books are not removed accidentally, requiring users to confirm before deletion. By integrating HTML for structure, CSS for styling, and JavaScript for dynamic functionality, this project provides a simple yet complete experience for managing books digitally. It is designed to be easy to use, beginner-friendly, and a practical exercise in building CRUD (Create, Read, Update, Delete) operations in a front-end web application.
